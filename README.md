@@ -1,4 +1,4 @@
-# Spring Boot Exchange Rate API
+# Currency Exchange Rate API (Spring Boot)
 
 This is a Spring Boot application that provides exchange rate information for different currencies.
 
