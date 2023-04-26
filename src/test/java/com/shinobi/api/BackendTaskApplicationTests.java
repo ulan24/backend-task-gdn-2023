@@ -1,10 +1,10 @@
-package com.ltp.contacts;
+package com.shinobi.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ContactsApplicationTests {
+class BackendTaskApplicationTests {
 
 	@Test
 	void contextLoads() {

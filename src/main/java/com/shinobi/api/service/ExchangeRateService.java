@@ -86,4 +86,16 @@ public class ExchangeRateService {
         return restTemplate.getForObject(url, ExchangeRateResponse.class);
     }
 
+    public double getBid(String currencyCode, int numberOfQuotations) {
+        String url = BASE_URL + "c/" + currencyCode + "/last/" + numberOfQuotations + "/";
+        ExchangeRateResponse response = getExchangeRateResponse(url);
+        return response.getRates().get(0).getBid();
+    }
+
+    public double getAsk(String currencyCode, int numberOfQuotations) {
+        String url = BASE_URL + "c/" + currencyCode + "/last/" + numberOfQuotations + "/";
+        ExchangeRateResponse response = getExchangeRateResponse(url);
+        return response.getRates().get(0).getAsk();
+    }
+
 }
